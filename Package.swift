@@ -22,7 +22,7 @@ let package = Package(
         .binaryTarget(
             name: "TSLocationManager",
             url: "https://github.com/markerpen/TSLocationManagerSPM/blob/main/TSBackgroundFetch.xcframework.zip",
-            checksum: "819101a40a8a54fa189bc462570b19dcf091cd2db124fe54a7cd9b1e468688a5"
+            checksum: "f65638f2bbe72efec649370ad10f305fa6ed4382b8c3536b88389101d6de5e3e"
         )
     ]
 )
