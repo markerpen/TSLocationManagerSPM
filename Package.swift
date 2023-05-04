@@ -3,8 +3,6 @@
 import PackageDescription
 import Foundation
 
-let version = "2023.4"
-
 let package = Package(
     name: "TSLocationManager-SPM",
     platforms: [.iOS(.v10)],
@@ -15,13 +13,14 @@ let package = Package(
         )
     ],
     dependencies: [
-        .package(name: "CocoaLumberjack", url: "https://github.com/CocoaLumberjack/CocoaLumberjack.git", .exact("3.8.0")),
+        .package(name: "CocoaLumberjack", url: "https://github.com/CocoaLumberjack/CocoaLumberjack.git", .exact("3.8.0"))
     ],
-    dependencies: [],
     targets: [
         .binaryTarget(
+            name: "TSBackgroundFetch",
+            path: "TSBackgroundFetch.xcframework"),
+        .binaryTarget(
             name: "TSLocationManager",
-            url: "TSLocationManager.xcframework"
-        )
-    ]
-)
+            path: "TSLocationManager.xcframework")
+    ])
+
