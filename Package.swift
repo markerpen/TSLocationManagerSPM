@@ -14,9 +14,9 @@ let package = Package(
             targets: ["TSLocationManager"]
         )
     ],
-    //dependencies: [
-    //    .package(name: "TSBackgroundFetch", url: "https://github.com/mapbox/mapbox-common-ios.git", .upToNextMajor(from: mapboxCommonVersion)),
-    //],
+    dependencies: [
+        .package(name: "CocoaLumberjack", url: "https://github.com/CocoaLumberjack/CocoaLumberjack.git", .exact("3.8.0")),
+    ],
     dependencies: [],
     targets: [
         .binaryTarget(
